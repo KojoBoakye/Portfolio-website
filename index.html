@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" type="image/png" href="images/black.png">
+        <link rel="shortcut icon" type="image/png" href="black.png">
         <title>Portfolio | kojo boakye jnr</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
     </div>
      <nav class="nav-el" id="nav-el">
      <ul>
-       <li><a href="">Home</a></li>
+       <li class="home"><a href="">Home</a></li>
        <li><a href="#skills">Skills</a></li>
        <li><a href="#projects">Projects</a></li>
        <li><a href="#abouts">About</a></li>
@@ -40,21 +40,43 @@
 
       <!-- home section starts -->
 
+  <section class="home-el">
+  
+
+ <div class="hometext">
+<h2>Hello there ...</h2>
+<h1>Im Samuel</h1>
+<h2>I am a <span class="typingText"></span></h2>
+<a href=""><button>about me</button></a>
+
+ </div>
 
 
+ 
 
+  </section>
 
-
-
-
-
-
-
-
-
-      
         <!-- home section ends -->
+                <!-- about section starts -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                        <!-- about section ends -->
 
 
 
@@ -65,5 +87,15 @@
 
        
         <script src="index.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script> 
+          var typed = new Typed('.typingText',  {
+            strings:["Junior front-end dev" , " Graphics designer"] , typeSpeed:120 , loop:true
+          }
+          
+          
+          
+          
+          );</script>
     </body>
 </html>
