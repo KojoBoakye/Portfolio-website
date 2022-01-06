@@ -1,4 +1,4 @@
- 
+ console.log('active')
  let barsEl =  document.getElementById("bars-el")
  
  function toggle(){

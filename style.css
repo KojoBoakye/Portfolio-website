@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
 @import url(//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A);
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Poppins:wght@100&display=swap');
 
 *{
     margin: 0 ; 
@@ -33,6 +33,9 @@ header{
     width: 100%;
     margin: 0;
 }
+
+
+
 
 
 .sticky {
@@ -82,6 +85,12 @@ header h1 {
     font-weight: bolder;
 
 }
+
+header img{
+    width: 50px;
+    margin-left: 30px;
+}
+
 
 
 header h1:hover{
@@ -165,6 +174,7 @@ margin: 0;
        color: rgb(60, 192, 148);
        background: none;
        border: 1px rgb(66, 66, 66) solid ;
+       margin-top: 30px;
       
    }
 
@@ -214,16 +224,25 @@ margin: 0;
  }
 
  .about-content .about-text p{
-    color: white;
- width: 300px;
+    color: rgb(255, 255, 255);
+ width: 400px;
    font-size: 15px;
+   border-radius: 8px;
+   padding: 30px;
+   border: 00.5px solid   #2a2e39;
+    
 }
 
 
 .experience{
     color:  rgb(60, 192, 148);
-    margin-bottom: 300px;
-   
+    margin-bottom: 100px;
+   justify-content: center;
+   text-align: center;
+   display:  inline-block;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
  
 }
 
@@ -334,21 +353,6 @@ font-size: 30px;
                   }
      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .skills{
     width: 100%;
     color: white;
@@ -444,7 +448,7 @@ font-size: 30px;
     
     display: block;
     justify-content: center;
-   margin-top: 400px;
+   margin-top: 100px;
    margin-bottom: 400px;
    width: 100%;
 
@@ -647,8 +651,77 @@ justify-content: center;
 
 
 
- 
+ .contacts .heading{
+     color:rgb(255, 255, 255);
+     font-size: 50px;
+     font-weight: bolder;
+    justify-content: center;
+    display: inline-block;
+  
+    margin-bottom: 100px;
+    margin-top: 100px;
+      
+ }
 
+ .contacts{
+     justify-content: center;
+     text-align: center;
+     display:  inline-block;
+     width: fit-content;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 300px;
+     
+ }
+
+.contacts .bus{
+   
+    display:  block;
+    width: fit-content;
+    height: 100%;
+    
+    
+     
+}
+
+ .contacts .contain{
+      color: rgb(255, 255, 255);
+     display: flex;
+     margin-bottom: 30px;
+     padding: 20px;
+     border-radius: 8px;
+     border: rgb(66, 66, 66) solid 1px;
+     
+    
+     
+    
+ }
+
+ .contacts .contain:hover{
+    
+   border:rgb(60, 192, 148) solid 1px;
+   
+  
+   
+  
+}
+
+
+ .contacts .contain h1{
+     font-size: 20px;
+     font-family: poppins;
+     text-align: left;
+    
+ }
+
+ .contacts .contain i{
+    font-size: 30px;
+    margin-right: 30px;
+    font-weight: bolder;
+    color: rgb(60, 192, 148);
+    
+}
 
 
 
@@ -671,21 +744,75 @@ justify-content: center;
 
 
 /* media queries */
+
+
 @media (max-width:768px){
 
+    .projects{
+        overflow-x: visible;
+    }
+
+    .contacts .contain h1{
+        font-size: 15px;
+        font-family: poppins;
+        text-align: left;
+        word-break:break-all;
+        
+    }
+   
+    .contacts .contain i{
+       font-size: 25px;
+       margin-right: 30px;
+       font-weight: bolder;
+       color: rgb(60, 192, 148);
+       
+   }
+
+
+   .contacts .bus{
+    text-align: center;
+     display:  block;
+     width: 400px;
+     height: 100%;
+     justify-content: center;
+     align-content: center;
+     margin-left: auto;
+     margin-right: auto;
+    
+     
+      
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
     .experience{
-        display: inline ;
         justify-content: center;
+       
+    
+        width: 100%;
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
     }
 
     .experience .heading{
-        font-weight: bolder;
+     
         font-size: 50px;
         text-align: center;
-        margin:100px 0px;
+        margin-bottom:100px  ;
+        margin-top: 100px;
         color: white;
+        word-break:break-all;
     }
 
     .experience .content{
@@ -697,13 +824,15 @@ justify-content: center;
     }
       
     .experience .content h1{
-        font-size: 20px;
+        font-size: 25px;
+        text-align: left;
         }
         
         
         .experience .content p{
-            font-size: 10px;
+            font-size: 15px;
             color: rgb(255, 255, 255);
+            text-align: left;
             }
             
         
@@ -740,7 +869,9 @@ justify-content: center;
 
 
 
-
+.service-el{
+    margin-top: 100px;
+}
 
 
 
@@ -889,7 +1020,7 @@ justify-content: center;
 
 
     .about-content img{
-        width: 200px;
+        width: 253px;
         border-radius: 5px;
         display: block;
         margin-left: auto;

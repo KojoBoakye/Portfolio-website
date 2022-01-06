@@ -13,19 +13,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
     <body>
      <!-- header section starts -->
 
     <header id="header-el">
-     <a href="#"><h1>Portfolio</h1></a>
+     <a href="#"><h1>boakye</h1></a>
 
      <div id="icon" >
      <i  id='bars-el' class=" fa fa-bars" onclick='toggle()' style='font-size:30px;'></i>
     </div>
      <nav class="nav-el" id="nav-el">
      <ul>
-       <li class="home"><a href="">Home</a></li>
+       <li class="home"><a href=" ">Home</a></li>
        <li><a href="#abouts">About</a></li>
        <li><a href="#skills">Skills</a></li>
        <li><a href="#projects">Projects</a></li>
@@ -64,11 +66,11 @@
     <div class="heading">about me</div>
     <div class="about-content">
      <div class="imagery">
-       <img src="me.jpg">
+       <img src="me.png">
      </div>
      <div class="about-text">
-     <h1>My name is Samuel Kojo Boakye</h1>
-     <p>My aspiration to live creativity and meet people’s needs led me to take a Bachelor’s in Computer Science. My aim is always to combine a pragmatic approach with great aesthetics, while improving communication between people. As a scholar, I enroll in the University of Ghana pursuing a Bsc in CS, this ultimately helped me to get my foot into the world of tech and software engineering. As a believer in sustainable practices, Im focused on developing my craft to become a good and successful software engineer. </p>
+     
+     <p data-aos="flip-up">My aspiration to live creativity and meet people’s needs led me to take a Bachelor’s in Computer Science. My aim is always to combine a pragmatic approach with great aesthetics, while improving communication between people. As a scholar, I enroll in the University of Ghana pursuing a Bsc in CS, this ultimately helped me to get my foot into the world of tech and software engineering. As a believer in sustainable practices, Im focused on developing my craft to become a good and successful software engineer. </p>
      </div>
 
     </div>
@@ -125,16 +127,16 @@
     <div class="heading">Experience</div>
 <div class="content">
   <ul>
-    <li><h1>front-end developer</h1>
+    <li data-aos="fade-right"><h1>front-end developer</h1>
     <p>2020 - Date</p>
   <p>Freelance</p></li>
      
 
-  <li><h1>Graphics Designer</h1>
+  <li data-aos="fade-left"><h1>Graphics Designer</h1>
     <p>2020 - Date</p>
   <p>Senior Graphics designer for HA Qlothing</p></li>
 
-  <li><h1>Project Manager</h1>
+  <li data-aos="fade-right"><h1>Project Manager</h1>
     <p>2021 </p>
    
 
@@ -152,10 +154,10 @@
 
 
       
-      <a name="services"></a>
+      
 
-      <section class="service-el"> 
-       
+     <section class="service-el"> 
+      <a name="services"></a>
        <div class="heading">Services </div>
 
       <div class="container">
@@ -245,14 +247,34 @@
 <!-- Projects section ends-->
 
 <!-- contacts section starts-->
+<a name="contact"></a>
 <section class="contacts">
 
 <div class="heading">Get In Touch</div>
+<div class="bus">
+<div class="contain" data-aos="fade-up">
+  <i class="fa fa-user"></i>
+  <h1>Samuel kojo Boakye</h1>
+</div>
 
+<div class="contain" data-aos="fade-up">
+  <i class="fa fa-globe"></i>
+  <h1>boakyemcjunior@gmail.com</h1>
+</div>
+
+<div class="contain" data-aos="fade-up">
+  <i class="fa fa-mobile"></i>
+  <h1>0553500914 / 0507283378</h1>
+</div>
+
+<div class="contain" data-aos="fade-up">
+  <i class="fa fa-location-arrow"></i>
+  <h1>Accra -Ghana</h1>
+</div>
   
 
 
-
+</div>
 
 
 
@@ -278,6 +300,7 @@
 
 
 <!-- contscts section ends-->
+  
 
 
  
@@ -297,12 +320,14 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script> 
           var typed = new Typed('.typingText',  {
-            strings:["Junior front-end dev" , " Graphics designer"] , typeSpeed:120 , loop:true
+            strings:["Junior front-end dev" , " Graphics designer" , "UI/UX Designer"] , typeSpeed:120 , loop:true
           }
-          
-          
-          
-          
+
           );</script>
+           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+           <script>
+             AOS.init({duration: 1000,
+                     });
+           </script>
     </body>
 </html>
