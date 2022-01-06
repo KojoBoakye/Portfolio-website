@@ -20,6 +20,7 @@ html{
 }
 body{
     overflow-x: hidden;
+   
    background: #000000;
 }
 header{
@@ -790,7 +791,7 @@ justify-content: center;
 
     body{
         overflow-x: hidden;
-        overflow-y: hidden;
+        
     }
     .contacts .contain{
         color: rgb(255, 255, 255);
@@ -840,7 +841,7 @@ body{
     }
 
     .projects{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
 
