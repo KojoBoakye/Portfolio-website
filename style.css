@@ -122,7 +122,7 @@ header nav ul li a{
 
  .home-el{ 
    
-  background-image: url('black.png') ;
+  background-image: url('images/black.png') ;
   background-size: fixed;
   background-position: 90%;
   background-repeat: no-repeat;
@@ -589,6 +589,9 @@ font-size: 30px;
 .projects .proj-works .work button:hover  i{
  
     display:inline-block ;
+    color: rgb(255, 255, 255);
+    
+    text-decoration: none;
   
 }
  
@@ -655,31 +658,29 @@ justify-content: center;
      color:rgb(255, 255, 255);
      font-size: 50px;
      font-weight: bolder;
-    justify-content: center;
-    display: inline-block;
-  
+    text-align: center;
     margin-bottom: 100px;
     margin-top: 100px;
       
  }
 
  .contacts{
-     justify-content: center;
+     
      text-align: center;
-     display:  inline-block;
-     width: fit-content;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
+     width:100%;
      margin-bottom: 300px;
+     display: inline-block;
      
  }
 
 .contacts .bus{
    
-    display:  block;
-    width: fit-content;
+    
+    width: 100%;
     height: 100%;
+   
+ 
+    
     
     
      
@@ -692,7 +693,10 @@ justify-content: center;
      padding: 20px;
      border-radius: 8px;
      border: rgb(66, 66, 66) solid 1px;
+     width: 350px;
      
+      margin-left: auto;
+      margin-right: auto;
     
      
     
@@ -711,8 +715,9 @@ justify-content: center;
  .contacts .contain h1{
      font-size: 20px;
      font-family: poppins;
+     display: inline-block;
      text-align: left;
-    
+     word-break:break-all;
  }
 
  .contacts .contain i{
@@ -724,8 +729,46 @@ justify-content: center;
 }
 
 
+.footer{
+    width: 100%;
+}
+
+.footer .links{
+    display: inline-flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.footer .links img{
+    width:50px;
+    margin: 50px;
+}
+
+.footer .last h1{
+    color: white;
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.footer .last h1 a{
+    color: rgb(60, 192, 148);
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer .last{
+    display: inline;
+}
 
 
+.footer .last p{
+    color: white;
+    float: right;
+}
 
 
 
@@ -742,15 +785,60 @@ justify-content: center;
 
 
 
+@media (max-width:350px){
+    .contacts .contain{
+        color: rgb(255, 255, 255);
+       display: flex;
+       margin-bottom: 30px;
+       padding: 20px;
+       border-radius: 8px;
+       border: rgb(66, 66, 66) solid 1px;
+       width: 200px;
+        margin-left: 30px;
+        margin-right: auto;
+       
+   }
+
+ .work{
+     margin-left: 25px;
+ }
+ .footer .last h1{
+  margin-bottom: 10px;
+}
+
+}
 
 /* media queries */
 
 
 @media (max-width:768px){
 
+
+
+    
+
+
+
+    .footer .last p{
+        color: white;
+        float: right;
+        font-size: 5px;
+    }
+    
+
+    .footer .links img{
+        width:30px;
+        margin: 30px;
+    }
+
     .projects{
         overflow-x: visible;
     }
+
+
+           
+
+
 
     .contacts .contain h1{
         font-size: 15px;
@@ -771,7 +859,7 @@ justify-content: center;
 
    .contacts .bus{
     text-align: center;
-     display:  block;
+     
      width: 400px;
      height: 100%;
      justify-content: center;
@@ -931,7 +1019,8 @@ justify-content: center;
     border: 00.5px solid   #2a2e39;
     width: 250px;
      
-    
+   
+     
     
     }
 
@@ -941,7 +1030,7 @@ justify-content: center;
       
         display:inline-block ;
         width: 100%;
-        
+       
 
          
         }
@@ -1113,10 +1202,13 @@ justify-content: center;
     position: fixed;
     top:  -150%;
     
-    width: 100vw;
-    
+    width: 300px;
+    border-radius: 8px;
+    border: rgb(66, 66, 66) solid 1px;
     color: #ffffff;
    background:#000000 ;
+   padding-bottom: 30px;
+ 
   
 
 }
@@ -1135,6 +1227,8 @@ justify-content: center;
   .nav-el ul li{
       margin: 10px;
   }
+
+  
 
  .fa-times{
      color: white;
