@@ -786,6 +786,11 @@ justify-content: center;
 
 
 @media (max-width:350px){
+
+
+    body{
+        overflow-x: hidden;
+    }
     .contacts .contain{
         color: rgb(255, 255, 255);
        display: flex;
@@ -814,7 +819,9 @@ justify-content: center;
 @media (max-width:768px){
 
 
-
+body{
+    overflow-x: hidden;
+}
     
 
 
